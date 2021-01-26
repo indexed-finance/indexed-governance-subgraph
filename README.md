@@ -1,8 +1,10 @@
-## Compound Governance Subgraph
+## Indexed Governance Subgraph
 
-This subgraph indexes and exposes in GraphQL all the event data related to the GovernorAlpha and CompoundToken contracts from Compound, providing an easy access to Token holder and Delegates information, Proposals and votes casted, and all the relationships between those entities.
+Forked from https://github.com/protofire/indexed-governance-subgraph
 
-A live version of this subgraph can be found [here](https://thegraph.com/explorer/subgraph/protofire/compound-governance), along with useful queries and examples already available on the playground.
+This subgraph indexes and exposes in GraphQL all the event data related to the GovernorAlpha and NDX contracts from Indexed, providing an easy access to Token holder and Delegates information, Proposals and votes casted, and all the relationships between those entities.
+
+A live version of this subgraph can be found [here](https://thegraph.com/explorer/subgraph/indexed-finance/indexed-governance), along with useful queries and examples already available on the playground.
 
 ### Historical data
 
