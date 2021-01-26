@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: Compound governance subgraph
-repository: https://github.com/protofire/compound-governance-subgraph
+repository: https://github.com/indexed-finance/indexed-governance-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
@@ -8,9 +8,9 @@ dataSources:
     name: GovernorAlpha
     network: mainnet
     source:
-      address: "0xc0da01a04c3f3e0be433606045bb7017a7323e38"
+      address: "0x95129751769f99cc39824a0793ef4933dd8bb74b"
       abi: GovernorAlpha
-      startBlock: 9601459
+      startBlock: 11457782
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
@@ -37,12 +37,12 @@ dataSources:
         - event: VoteCast(address,uint256,bool,uint256)
           handler: handleVoteCast
   - kind: ethereum/contract
-    name: CompoundToken
+    name: IndexedToken
     network: mainnet
     source:
-      address: "0xc00e94cb662c3520282e6f5717214004a7f26888"
-      abi: CompoundToken
-      startBlock: 9601359
+      address: "0x86772b1409b61c639eaac9ba0acfbb6e238e5f83"
+      abi: IndexedToken
+      startBlock: 11457421
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
@@ -52,8 +52,8 @@ dataSources:
         - Delegate
         - TokenHolder
       abis:
-        - name: CompoundToken
-          file: ./abis/CompoundToken.json
+        - name: IndexedToken
+          file: ./abis/IndexedToken.json
       eventHandlers:
         - event: DelegateChanged(indexed address,indexed address,indexed address)
           handler: handleDelegateChanged
